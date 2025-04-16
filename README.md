@@ -1,5 +1,3 @@
----
-
 # Secure Login System
 
 A secure login system built with **Node.js**, **Express**, **SQLite**, and other modern libraries. This project implements user registration, email verification, login, password reset, and secure token-based authentication.
@@ -14,6 +12,7 @@ A secure login system built with **Node.js**, **Express**, **SQLite**, and other
 - **Password Reset**: Request a reset code via email and change your password securely.
 - **Secure Authentication**: JWT-based authentication with signed cookies for session management.
 - **Password Validation**: Enforces strong password policies.
+- **Encryption Utilities**: AES encryption and decryption for sensitive data.
 
 ---
 
@@ -22,13 +21,16 @@ A secure login system built with **Node.js**, **Express**, **SQLite**, and other
 ```
 .env
 app.js
+LICENSE
 package.json
+README.md
 secure_login.db
 api/
   └── auth.js
 controllers/
   └── auth.js
 lib/
+  ├── crypto.js
   └── db.js
 ```
 
@@ -47,8 +49,7 @@ lib/
 1. **Clone the repository:**
 
 ```bash
-git clone <repository-url>
-cd Secure-Login-System
+git clone https://github.com/AkramHossain0/Secure-Login-System-with-Node.js-Express-and-SQLite.git
 ```
 
 2. **Install dependencies:**
@@ -136,6 +137,6 @@ npm run start
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [Apache License 2.0](LICENSE).
 
 ---
